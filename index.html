@@ -13,6 +13,7 @@
   <link rel="shortcut icon" href="https://raw.githubusercontent.com/miray-market/miray-market.github.io/master/favicon.ico" />
 
   <link rel="stylesheet" type="text/css" href="https://miray-market.github.io/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://miray-market.github.io/assets/css/font-awesome.min.css" />
 
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -20,14 +21,14 @@
   <script src="https://barak-framework.github.io/assets/js/html5shiv.min.js"></script>
   <script src="https://barak-framework.github.io/assets/js/respond.min.js"></script>
 
-<![endif]-->
+  <![endif]-->
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://code.jquery.com/jquery-latest.min.js"></script>
-<script src="https://miray-market.github.io/assets/js/bootstrap.min.js"></script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://miray-market.github.io/assets/js/bootstrap.min.js"></script>
 
-<!-- Google Analytics start -->
-<script type="text/javascript">
+  <!-- Google Analytics start -->
+  <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-111463108-1']);
 
@@ -37,27 +38,27 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-</script>
-<!-- Google Analytics end -->
+  </script>
+  <!-- Google Analytics end -->
 
-<!-- Highlightjs start -->
-<!-- source: http://highlightjs.org -->
-<link rel="stylesheet" type="text/css" href="https://miray-market.github.io/assets/css/highlight.pack.css" />
-<script src="https://miray-market.github.io/assets/js/highlight.pack.js"></script>
-<script type="text/javascript">
+  <!-- Highlightjs start -->
+  <!-- source: http://highlightjs.org -->
+  <link rel="stylesheet" type="text/css" href="https://miray-market.github.io/assets/css/highlight.pack.css" />
+  <script src="https://miray-market.github.io/assets/js/highlight.pack.js"></script>
+  <script type="text/javascript">
   hljs.initHighlightingOnLoad();
-</script>
-<!-- Highlightjs end -->
+  </script>
+  <!-- Highlightjs end -->
 
-<!-- Animatecss start -->
-<!-- source: https://daneden.github.io/animate.css/ -->
-<link rel="stylesheet" type="text/css" href="https://miray-market.github.io/assets/css/animate.min.css" />
-<!-- Animatecss end -->
+  <!-- Animatecss start -->
+  <!-- source: https://daneden.github.io/animate.css/ -->
+  <link rel="stylesheet" type="text/css" href="https://miray-market.github.io/assets/css/animate.min.css" />
+  <!-- Animatecss end -->
 
-<!-- Github-markdown-css start -->
-<!-- source: https://github.com/sindresorhus/github-markdown-css -->
-<link rel="stylesheet" type="text/css" href="https://miray-market.github.io/assets/css/github-markdown.css" />
-<style>
+  <!-- Github-markdown-css start -->
+  <!-- source: https://github.com/sindresorhus/github-markdown-css -->
+  <link rel="stylesheet" type="text/css" href="https://miray-market.github.io/assets/css/github-markdown.css" />
+  <style>
   .markdown-body {
     box-sizing: border-box;
     min-width: 200px;
@@ -71,20 +72,15 @@
       padding: 15px;
     }
   }
-</style>
-<!-- Github-markdown-css end -->
+  </style>
+  <!-- Github-markdown-css end -->
 
-<!-- Showdownjs start -->
-<!-- source: https://github.com/showdownjs/showdown -->
-<script src="https://miray-market.github.io/assets/js/showdown.min.js"></script>
-<!-- Showdownjs end -->
+  <!-- Showdownjs start -->
+  <!-- source: https://github.com/showdownjs/showdown -->
+  <script src="https://miray-market.github.io/assets/js/showdown.min.js"></script>
+  <!-- Showdownjs end -->
 
-<!-- Moonmode start -->
-<!-- source : http://github.com/gdemir/moonmode -->
-<link rel="stylesheet" type="text/css" href="https://miray-market.github.io/assets/css/moonmode.min.css" />
-<!-- Moonmode end -->
-
-<script type="text/javascript">
+  <script type="text/javascript">
 
   $(document).ready(function() {
 
@@ -99,12 +95,6 @@
       return RESULT;
     }
 
-    $("#moonmode-logo").click(function() {
-      $("body").toggleClass("moonmode-body");
-      $("#readme").toggleClass("moonmode-page");
-    });
-
-    $("#path").hide();
     $('.page').click(function() {
       var PAGE = $(this).attr('id');
       var MARKDOWN = get_markdown("https://raw.githubusercontent.com/miray-market/miray-market.github.io/master/pages/_" + PAGE );
@@ -112,30 +102,22 @@
       var HTML = converter.makeHtml(MARKDOWN);
 
       var PAGETEXT = $(this).text();
-      $("#subpath").html(PAGETEXT);
-      $("#path").show()
-
       $("#readme").html(HTML);
+
 
       $('pre code').each(function(i, e) { hljs.highlightBlock(e) });
 
     });
 
   });
-</script>
+  </script>
 
-<style type="text/css">
+  <style type="text/css">
   /* locals */
 
   @import  url('https://fonts.googleapis.com/css?family=Nunito:300,400,600');
   body { font-family: 'Nunito', sans-serif;  background-color: #fdfdfd; }
   code { color: #c7254e; }
-
-  #intro { font-size: 12px; color: #777; }
-  #intro h3 { margin: 0; padding: 10px; font-size: 33px; font-weight: 300; line-height: 1.1; }
-  #intro h5 { margin-top: 20px; margin-bottom: 20px; font-size: 12px; font-weight: 500; }
-
-  #about { border-top: 1px solid #ccc; }
 
   #readme { color: #333; }
   #readme h1 {
@@ -154,30 +136,31 @@
   #readme h4 { border-bottom: 1px solid #e1e4e8; padding-bottom: 1em; }
   #readme h5 { border-radius: 8px; border: 2px dotted #424242; padding: 1em; }
 
-  .turquoise_color { color: turquoise; }
-  .turquoise_border { border:3px solid turquoise; border-radius: 8px; }
+  .miray-market_color_1 { color: #01a04c; }
+  .miray-market_color_2 { color: #ffcb4e; }
 
-  /* overwrite TurkuazCSS */
+  .miray-market_bgcolor_1 { background-color: #01a04c; }
+  .miray-market_bgcolor_2 { background-color: #ffcb4e; }
 
-  blockquote { background-color: transparent; }
-  ol, ul, dl { list-style-type: disc; }
-</style>
+  </style>
 </head>
 <body style="background-color:#eee">
 
+  <!-- Navbar start -->
+
   <style type="text/css">
-    /* NAVBAR */
-    .navbar-inverse .navbar-nav > li > a {
-      color: white;
-    }
-    .navbar-inverse {
-      background-image: linear-gradient(to bottom, #29292a 0, #29292a 100%);
-      background-image: linear-gradient(to bottom, #01a04c 0, #01a04c 100%);
-    }
-    .navbar {
-      border-radius: 0px !important;
-      margin-bottom: 0px;
-    }
+  /* NAVBAR */
+  .navbar-inverse .navbar-nav > li > a {
+    color: white;
+  }
+  .navbar-inverse {
+    width: 100%;
+    background-image: linear-gradient(to bottom, #01a04c 0, #01a04c 100%);
+  }
+  .navbar {
+    border-radius: 0px !important;
+    margin-bottom: 0px;
+  }
   </style>
 
   <nav class="navbar navbar-inverse navbar-static-top" data-spy="affix" data-offset-top="197">
@@ -192,7 +175,7 @@
         </button>
 
         <a class="nabar-brand hidden-xs" href="/home/index" style="padding: 0px 10px 10px 10px;">
-          <img alt="Brand" src="http://miray-market.github.io/assets/img/default-side.png" style="height:30px; padding-left:10px" class="img-responsive"/>
+          <img alt="Brand" src="http://miray-market.github.io/assets/img/default-side.png" style="height:40px; padding-left:10px" class="img-responsive"/>
         </a>
         <a class="nabar-brand visible-xs" href="/home/index" style="padding: 15px 0px 15px 15px;">
           <img alt="Brand" src="http://miray-market.github.io/assets/img/default.png" style="height:60px; padding-left:5px" class="img-responsive"/>
@@ -202,84 +185,86 @@
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <!--<ul class="nav navbar-nav navbar-left" style="padding: 30px 25px 0px 0px;"></ul>-->
-        <ul class="nav navbar-nav navbar-right" style="padding: 10px 25px 0px 0px;">
-          <li><a href="http://miray-market.github.io" class="visible-xs" style="margin-top:-15px">Anasayfa</a></li>
-          <li><a href="" class="page" id="terms-of-use.md" class="hidden-xs">Kullanım Şartları</a></li>
-          <li><a href="" class="page" id="privacy-policy.md" class="hidden-xs">Gizlilik Politikası</a></li>
-          <li><a href="" class="page" id="about.md" class="hidden-xs">Miray Market Hakkında</a></li>
+        <ul class="nav navbar-nav navbar-right" style="padding: 15px 25px 0px 0px; font-size:16px; font-weight:bold;">
+          <li><a href="/home/writers/search">Hakkımızda</a></li>
         </ul>
 
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
+  <!-- Navbar end -->
 
-
+  <!-- Slide start -->
+  <style type="text/css">
+  .background-transparent {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+  }
+  </style>
 
   <div id="carousel-example-generic1" class="carousel slide" data-ride="carousel" style="color:white; font-size:14px;">
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
 
-      <div class="item active" style="
-      background-image:url(http://miray-market.github.io/assets/img/slide_1.jpg);
-      background-position:center;
-      min-height:479px;
-      max-height:479px;
-      ">
-      <div class="carousel-caption" style="bottom:0;left:0;right:0; margin-bottom:-40px;">
-        <div class="background-transparent" style="min-height:80px;">
-          <h3 class="animated bounceInDown">Miray Market Market</h3>
-          <h4 class="hidden-sm hidden-xs animated bounceInUp">Ev Market İhtiyacınızı, Evinize Kadar Getirelim!</h4>
+      <div class="item active" style="background-position:center;min-height:479px;max-height:479px;background-image:url(http://miray-market.github.io/assets/img/slide_1.jpg);">
+        <div class="carousel-caption" style="bottom:0px;left:0px;right:0px; margin-bottom:-40px;">
+          <div class="background-transparent" style="min-height:80px;">
+            <h3 class="animated bounceInDown">Miray Market Market</h3>
+            <h4 class="hidden-sm hidden-xs animated bounceInUp">Ev Market İhtiyacınızı, Evinize Kadar Getirelim!</h4>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="item" style="
-    background-image:url(http://miray-market.github.io/assets/img/slide_2.jpg);
-    background-position:center;
-    min-height:479px;
-    max-height:479px;
-    ">
-    <div class="carousel-caption" style="bottom:0;left:0;right:0; margin-bottom:-40px;">
-      <div class="background-transparent" style="min-height:80px;">
-        <h3 class="animated bounceInDown">Miray Market Manav</h3>
-        <h4 class="hidden-sm hidden-xs animated bounceInUp">Ev Manav İhtiyacınızı, Evinize Kadar Getirelim!</h4>
+      <div class="item" style="background-position:center;min-height:479px;max-height:479px;background-image:url(http://miray-market.github.io/assets/img/slide_2.jpg);">
+        <div class="carousel-caption" style="bottom:0px;left:0px;right:0px; margin-bottom:-40px;">
+          <div class="background-transparent" style="min-height:80px;">
+            <h3 class="animated bounceInDown">Miray Market Manav</h3>
+            <h4 class="hidden-sm hidden-xs animated bounceInUp">Ev Manav İhtiyacınızı, Evinize Kadar Getirelim!</h4>
+          </div>
+        </div>
       </div>
+
+      <div class="item" style="background-position:center;min-height:479px;max-height:479px;background-image:url(http://miray-market.github.io/assets/img/slide_3.jpg);">
+        <div class="carousel-caption" style="bottom:0px;left:0px;right:0px; margin-bottom:-40px;">
+          <div class="background-transparent" style="min-height:80px;">
+            <h3 class="animated bounceInDown">Miray Market Kırtasiye</h3>
+            <h4 class="hidden-sm hidden-xs animated bounceInUp">Ev Kırtasiye İhtiyacınızı, Evinize Kadar Getirelim!</h4>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic1" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic1" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+
+  </div>
+  <!-- Slide end -->
+
+  <!-- Contact start -->
+  <div class="container-fluid miray-market_bgcolor_2" style="padding:2em; color:white; font-size:20px;">
+    İletişim
+  </div>
+  <div class="container-fluid">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3182.4823667655537!2d37.32656731529816!3d37.09363367988913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1531e188867b24d9%3A0x5abfb112938799f3!2sNEF+Sistem!5e0!3m2!1str!2str!4v1514872577082
+    " width="100%" height="450" frameborder="0" style="border:0"></iframe>
+  </div>
+  <!-- Contact end -->
+
+  <div class="container-fluid">
+    <div id="readme" class="markdown-body">
     </div>
   </div>
 
-  <div class="item" style="
-  background-image:url(http://miray-market.github.io/assets/img/slide_3.jpg);
-  background-position:center;
-  min-height:479px;
-  max-height:479px;
-  ">
-  <div class="carousel-caption" style="bottom:0;left:0;right:0; margin-bottom:-40px;">
-    <div class="background-transparent" style="min-height:80px;">
-      <h3 class="animated bounceInDown">Miray Market Kırtasiye</h3>
-      <h4 class="hidden-sm hidden-xs animated bounceInUp">Ev Kırtasiye İhtiyacınızı, Evinize Kadar Getirelim!</h4>
-    </div>
-  </div>
-</div>
-
-</div>
-<!-- Controls -->
-<a class="left carousel-control" href="#carousel-example-generic1" role="button" data-slide="prev">
-  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-  <span class="sr-only">Previous</span>
-</a>
-<a class="right carousel-control" href="#carousel-example-generic1" role="button" data-slide="next">
-  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-  <span class="sr-only">Next</span>
-</a>
-
-</div>
-
-<div class="container-fluid">
-</div>
-
-<style type="text/css">
+  <style type="text/css">
   .footer {
     background: url("http://miray-market.github.io/assets/img/footer.png") repeat center;
     border-radius: 0px 0px 0px 0px;
@@ -294,11 +279,7 @@
     font-size: 12px;
     padding: 1em;
   }
-  .footer a {
-    color: #A7A7A7;
-  }
-  .footer-box {
-    display: table;
+  .footer_box {
     width: 100%;
     height: 137px;
     margin-top: 40px;
@@ -306,46 +287,80 @@
     border-radius: 2px;
     background-color: #fff;
   }
-</style>
+  </style>
 
-<div class="footer">
-  <div class="container-fluid">
-    <div class="footer-box">
+  <div class="footer">
+    <div class="container">
+      <div class="footer_box">
 
-      <div class="row">
-        <div class="col-md-4">
-          <p><i class="fa fa-phone-square" aria-hidden="true"></i>TELEFON</p>
-          <h4 style="color:#01a04c;">
-            <a href="tel:05449448443">
-              <b>05449448443</b>
-            </a>
-          </h4>
+        <div class="row visible-lg visible-md">
+          <div class="text-center">
+            <div class="col-md-6 col-sm-6 col-xs-6">
+              <i class="fa-2x fa fa-phone-square" aria-hidden="true" style="color:black"></i>
+              <h4>TELEFON</h4>
+              <h4>
+                <a href="tel:05449448443">
+                  <b class="miray-market_color_1">
+                    05449448443
+                  </b>
+                </a>
+              </h4>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6">
+              <i class="fa-2x fa fa-map-marker" aria-hidden="true" style="color:black"></i>
+              <h4>ADRES</h4>
+              <h4>
+                <b class="miray-market_color_1">
+                  Güneykent mah. 102297 nolu sok. Erdalcan apt. Miray Market <br/> Şahinbey / Gaziantep
+                </b>
+              </h4>
+            </div>
+          </div>
         </div>
-        <div class="address">
-          <p><i class="fa fa-phone-square" aria-hidden="true"></i>ADRES</p>
-          <h4 style="color:#01a04c;">
-            <b>Güneykent mah. 102297 nolu sok. Erdalcan apt. Miray Market <br/> Şahinbey / Gaziantep</b>
-          </h4>
+
+        <div class="row visible-sm visible-xs">
+          <div class="text-center">
+            <div class="col-sm-12 col-xs-12">
+              <i class="fa-2x fa fa-phone-square" aria-hidden="true" style="color:black"></i>
+              <h4>TELEFON</h4>
+              <h4>
+                <a href="tel:05449448443">
+                  <b class="miray-market_color_1">
+                    05449448443
+                  </b>
+                </a>
+              </h4>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+              <i class="fa-2x fa fa-map-marker" aria-hidden="true" style="color:black"></i>
+              <h4>ADRES</h4>
+              <h4>
+                <b class="miray-market_color_1">
+                  Güneykent mah. 102297 nolu sok. Erdalcan apt. Miray Market <br/> Şahinbey / Gaziantep
+                </b>
+              </h4>
+            </div>
+          </div>
         </div>
+
       </div>
-
     </div>
   </div>
-</div>
 
-<!-- whatsapp start -->
-<!-- source : http://github.com/gdemir/whatsapp -->
-<link rel="stylesheet" type="text/css" href="http://miray-market.github.io/assets/css/whatsapp.min.css" />
-<!-- whatsapp end -->
 
-<!-- backtotop start -->
-<!-- source : http://github.com/gdemir/backtotop -->
-<link rel="stylesheet" type="text/css" href="https://miray-market.github.io/assets/css/backtotop.min.css" />
-<a href="#" id="backtotop" title="Back to top">&uarr;</a>
-<script src="https://barak-framework.github.io/assets/js/backtotop.min.js"></script>
-<!-- backtotop end -->
+  <!-- Whatsapp start -->
+  <!-- source : http://github.com/gdemir/whatsapp -->
+  <link rel="stylesheet" type="text/css" href="http://miray-market.github.io/assets/css/whatsapp.min.css" />
+  <!-- Whatsapp end -->
 
-<a href="https://wa.me/905449448443" target="_blank"><div id="whatsapp-logo" style="bottom:0; left:0"></div></a>
+  <!-- Backtotop start -->
+  <!-- source : http://github.com/gdemir/backtotop -->
+  <link rel="stylesheet" type="text/css" href="https://miray-market.github.io/assets/css/backtotop.min.css" />
+  <a href="#" id="backtotop" title="Back to top">&uarr;</a>
+  <script src="https://miray-market.github.io/assets/js/backtotop.min.js"></script>
+  <!-- Backtotop end -->
+
+  <a href="https://wa.me/905449448443" target="_blank"><div id="whatsapp-logo" style="bottom:15px; left:15px"></div></a>
 
 </body>
 </html>
