@@ -165,38 +165,53 @@
 </head>
 <body style="background-color:#eee">
 
-  <div class="container-fluid">
-    <div class="row" style="padding-top:10px">
-      <div class="ck6 k6 o6 b6 cb6">
-        <a href="http://miray-market.github.io">
-          <img src="https://raw.githubusercontent.com/miray-market/miray-market.github.io/master/assets/img/default-border.png" height="58">
-        </a>
-      </div>
-      <div class="ck6 k6 o6 b6 cb6" style="margin-top:17px;text-align:right">
-        <a href="http://miray-market.github.io">
-          Miray Market
-        </a>
-      </div>
-    </div>
-  </div>
+  <style type="text/css">
+    /* NAVBAR */
+    .navbar-inverse .navbar-nav > li > a {
+      color: white;
+    }
+    .navbar-inverse {
+      background-image: linear-gradient(to bottom, #29292a 0, #29292a 100%);
+    }
+    .navbar {
+      border-radius: 0px !important;
+    }
+  </style>
 
-  <nav class="menu">
+  <nav class="navbar navbar-inverse navbar-static-top" data-spy="affix" data-offset-top="197">
     <div class="container">
-      <a href="http://miray-market.github.io">Anasayfa</a>
-      <a class="page" id="terms-of-use.md">Kullanım Şartları</a>
-      <a class="page" id="privacy-policy.md">Gizlilik Politikası</a>
-      <a class="page" id="about.md">Miray Market Hakkında</a>
-    </div>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="margin-top: 25px;">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a class="nabar-brand hidden-xs" href="/home/index" style="padding: 0px 10px 10px 10px;">
+          <img alt="Brand" src="http://miray-market.github.io/assets/img/default.png" style="height:30px; padding-left:10px" class="img-responsive"/>
+        </a>
+        <a class="nabar-brand visible-xs" href="/home/index" style="padding: 15px 0px 15px 15px;">
+          <img alt="Brand" src="http://miray-market.github.io/assets/img/default.png" style="height:60px; padding-left:5px" class="img-responsive"/>
+        </a>
+
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <!--<ul class="nav navbar-nav navbar-left" style="padding: 30px 25px 0px 0px;"></ul>-->
+        <ul class="nav navbar-nav navbar-right" style="padding: 10px 25px 0px 0px;">
+          <li><a href="http://miray-market.github.io" class="visible-xs" style="margin-top:-15px">Anasayfa</a></li>
+          <li><a class="page" id="terms-of-use.md" class="hidden-xs">Kullanım Şartları</a></li>
+          <li><a class="page" id="privacy-policy.md" class="hidden-xs">Gizlilik Politikası</a></li>
+          <li><a class="page" id="about.md" class="hidden-xs">Miray Market Hakkında</a></li>
+        </ul>
+
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
   </nav>
 
-  <div id="path" style="text-align:right">
-    <nav class="konum">
-      <ul>
-        <li><a href="http://miray-market.github.io/pages">Ana Sayfa</a></li>
-        <li><a id="subpath"></a></li>
-      </ul>
-    </nav>
-  </div>
 
   <div class="container-fluid">
 
