@@ -1,3 +1,10 @@
 # Miray Hakkında
 
-2020 yılında kurulmuştur. Market, manav ve kırtasiye sektörlerinde değer katmaya devam ediyoruz.
+## Kuruluş
+
+2020 yılında kurulmuştur.
+
+
+## Sektör
+
+Market, manav ve kırtasiye sektörlerinde değer katmaya devam ediyoruz.
